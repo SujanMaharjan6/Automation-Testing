@@ -101,4 +101,4 @@ The test suite automates key functionalities on the TVO Learn website's Learning
 - The page elements and locators are consistently available for testing.
 
 ## GitHub Link
-[GitHub Repository](https://github.com/your-username/tvolearn-cypress-tests)
+[GitHub Repository](https://github.com/SujanMaharjan6/tvolearn-cypress-tests)
