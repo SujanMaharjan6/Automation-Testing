@@ -28,7 +28,7 @@ describe("Learning forward in the Curriculum functionality", () => {
         });
     });
 
-    it('should click on the subject and land to the corresponding page',()=>{
+    it('should click on the subject and land to the corresponding page', () => {
         testData.dropdownItems.forEach((item, index) => {
             if (index > 0 && index < 9) {
                 helperFunction.openDropdown(0, 'Learning Resources (K-12)');

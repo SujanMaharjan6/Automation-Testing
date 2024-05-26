@@ -39,15 +39,16 @@ class HelperFunctions {
     }
 
     // checks subject content at the 'Learn Forward in the Curriculum' section
-    checkSubjectContents(checkNotContainSubject = false, specificSubject) {
+    checkSubjectContents(checkNotContainedSubject = false, specificSubject) {
         testData.subjects.forEach((subjectItems, index) => {
             cy.get(selectors.contentSelector).should('contain', subjectItems);
-            if (checkNotContainSubject) {
-                cy.get(selectors.contentSelector).should('not.contain', specificSubject);
-            } else {
-                cy.get(selectors.contentSelector).should('contain', specificSubject);
-            }
         });
+
+        if (checkNotContainedSubject) {
+            cy.get(selectors.contentSelector).should('not.contain', specificSubject);
+        } else {
+            cy.get(selectors.contentSelector).should('contain', specificSubject);
+        }
     }
 
     // only checks mathematics subject for now, can be improved to check every subjects
